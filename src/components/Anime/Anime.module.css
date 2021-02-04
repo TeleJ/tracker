@@ -1,0 +1,17 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  border: 3px solid black;
+  background-color: lightgrey;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.Title {
+  margin-left: 20px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}

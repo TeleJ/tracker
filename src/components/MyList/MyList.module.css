@@ -1,0 +1,11 @@
+.Title {
+  color: #b50b0b;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.Container {
+  display: grid;
+  margin-left: 20px;
+  margin-top: 20px;
+}

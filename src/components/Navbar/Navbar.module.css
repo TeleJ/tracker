@@ -1,0 +1,43 @@
+img {
+  height: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  height: 80px;
+  background-color: white;
+  align-items: center;
+  width: auto;
+  overflow: hidden;
+}
+
+li {
+  color: black;
+  display: inline;
+  padding-left: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Login {
+  position: absolute;
+  text-decoration: none;
+  right: 0;
+  display: inline;
+  padding-right: 20px;
+  color: black;
+}
+
+.About {
+  text-decoration: none;
+  color: black;
+}
+
+.Home {
+  text-decoration: none;
+  color: black;
+}

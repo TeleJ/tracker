@@ -1,0 +1,52 @@
+.Submit {
+  background-color: #b50b0b;
+  color: white;
+  margin-left: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 70px;
+  line-height: 25px;
+}
+
+.Submit:hover {
+  background-color: rgb(233, 78, 78);
+  cursor: pointer;
+}
+
+.Title {
+  margin-left: 20px;
+  padding: 2px;
+  line-height: 20px;
+  padding-left: 20px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.Rating {
+  margin-left: 2px;
+  width: 70px;
+  padding: 2px;
+  line-height: 20px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.Form {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.Title:hover {
+  background-color: #ff8787;
+}
+
+.Rating:hover {
+  background-color: #ff8787;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.8;
+}
