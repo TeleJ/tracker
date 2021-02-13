@@ -17,7 +17,7 @@ class AddAnime extends Component {
 		const handleSubmit = (e) => {
 			e.preventDefault();
 			this.props.onSubmit(this.state.currentAnime);
-			console.log(e.target.title.value);
+			this.setState({ currentAnime: '' });
 		};
 
 		return (

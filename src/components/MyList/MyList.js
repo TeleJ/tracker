@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import classes from './MyList.module.css';
 import AddAnime from '../AddAnime/AddAnime';
 import Anime from '../Anime/Anime';
+import * as actionCreators from '../../Store/actions/Actions';
 
 class MyList extends Component {
 	render() {
@@ -11,10 +12,17 @@ class MyList extends Component {
 			<div>
 				<AddAnime />
 				<div className={classes.Container}>
-					<h1 className={classes.Title}>Title</h1>
-					{this.props.animes.map((anime) => (
-						<Anime anime={anime} key={anime} />
-					))}
+					<h1 className={classes.Title}>Animes</h1>
+					<ul>
+						{this.props.animes.map((anime) => (
+							<Anime
+								key={anime.id}
+								anime={anime}
+								clicked={() => this.props.onDelete(anime.id)}
+							/>
+						))}
+					</ul>
+					{console.log(this.props.animes)}
 				</div>
 			</div>
 		);
@@ -27,4 +35,10 @@ const mapStateToProps = (state) => {
 	};
 };
 
-export default connect(mapStateToProps)(MyList);
+const mapDispatchToProps = (dispatch) => {
+	return {
+		onDelete: (id) => dispatch(actionCreators.removeAnime(id)),
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MyList);

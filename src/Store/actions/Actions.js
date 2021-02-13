@@ -10,10 +10,10 @@ export const addAnime = (anime) => {
 	};
 };
 
-export const removeAnime = (anime) => {
+export const removeAnime = (id) => {
 	return {
 		type: REMOVE_ANIME,
-		anime: anime,
+		animeId: id,
 	};
 };
 

@@ -9,9 +9,19 @@
 }
 
 .Title {
-  margin-left: 20px;
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+}
+
+.Container:hover {
+  opacity: 0.8;
+}
+
+.Container img {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
