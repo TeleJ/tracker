@@ -9,3 +9,17 @@
   margin-left: 20px;
   margin-top: 20px;
 }
+
+ol {
+  list-style-type: decimal;
+  display: list-item;
+  margin: 0;
+  padding-left: 25px;
+  list-style: none;
+}
+
+ol li {
+  display: list-item;
+  list-style: decimal;
+  list-style-position: outside;
+}

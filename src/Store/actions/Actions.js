@@ -3,6 +3,8 @@ export const REMOVE_ANIME = 'REMOVE_ANIME';
 export const ADD_USER = 'ADD_USER';
 export const REMOVE_USER = 'REMOVE_USER';
 
+const prevId = 0;
+
 export const addAnime = (anime) => {
 	return {
 		type: ADD_ANIME,

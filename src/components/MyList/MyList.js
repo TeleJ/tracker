@@ -13,7 +13,7 @@ class MyList extends Component {
 				<AddAnime />
 				<div className={classes.Container}>
 					<h1 className={classes.Title}>Animes</h1>
-					<ul>
+					<ol start="1">
 						{this.props.animes.map((anime) => (
 							<Anime
 								key={anime.id}
@@ -21,8 +21,7 @@ class MyList extends Component {
 								clicked={() => this.props.onDelete(anime.id)}
 							/>
 						))}
-					</ul>
-					{console.log(this.props.animes)}
+					</ol>
 				</div>
 			</div>
 		);
