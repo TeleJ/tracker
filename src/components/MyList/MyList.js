@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 import classes from './MyList.module.css';
 import AddAnime from '../AddAnime/AddAnime';
@@ -10,7 +11,9 @@ class MyList extends Component {
 	render() {
 		return (
 			<div>
-				<AddAnime />
+				<div className={classes.ButtonContainer}>
+					<AddAnime className={classes.Button} />
+				</div>
 				<div className={classes.Container}>
 					<h1 className={classes.Title}>Animes</h1>
 					<ol start="1">
