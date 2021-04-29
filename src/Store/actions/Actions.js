@@ -1,7 +1,6 @@
 export const ADD_ANIME = 'ADD_ANIME';
 export const REMOVE_ANIME = 'REMOVE_ANIME';
-export const ADD_USER = 'ADD_USER';
-export const REMOVE_USER = 'REMOVE_USER';
+export const ORDER_LIST = 'ORDER_LIST';
 
 export const addAnime = (anime) => {
 	return {
@@ -17,16 +16,9 @@ export const removeAnime = (id) => {
 	};
 };
 
-export const addUser = (user) => {
+export const orderList = (newList) => {
 	return {
-		type: REMOVE_ANIME,
-		user: user,
-	};
-};
-
-export const removeUser = (user) => {
-	return {
-		type: REMOVE_ANIME,
-		user: user,
+		type: ORDER_LIST,
+		newList: newList,
 	};
 };

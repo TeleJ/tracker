@@ -9,7 +9,13 @@ const reducer = (state = initialState, action) => {
 		case actionTypes.ADD_ANIME:
 			return {
 				...state,
-				animes: [...state.animes, { id: action.anime, anime: action.anime }],
+				animes: [
+					...state.animes,
+					{
+						id: action.anime,
+						anime: action.anime,
+					},
+				],
 			};
 		case actionTypes.REMOVE_ANIME:
 			const updatedArray = state.animes.filter(
@@ -18,6 +24,11 @@ const reducer = (state = initialState, action) => {
 			return {
 				...state,
 				animes: updatedArray,
+			};
+		case actionTypes.ORDER_LIST:
+			return {
+				...state,
+				animes: action.newList,
 			};
 		default:
 			return state;
